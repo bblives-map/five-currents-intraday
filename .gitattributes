@@ -1,0 +1,3 @@
+# Preserve audited source/config/report bytes consistently on every platform.
+* -text
+*.png binary

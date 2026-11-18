@@ -1,0 +1,54 @@
+{
+  "book": "intraday",
+  "data_policy": "Supply licensed inputs privately; never commit vendor market data or runtime credentials.",
+  "files": [
+    {
+      "path": "five_currents_dashboard/private_replay_cache.pkl",
+      "purpose": "Trusted locally generated daily replay from the interday engine",
+      "redistributed": false,
+      "sha256": "d2273feeae658f3cb52e37b501082d8820fabaca770c432cbc9dbedf6ae65232"
+    },
+    {
+      "path": "five_currents_execution_timing_20261023/sessions.parquet",
+      "purpose": "Daily-signal-aligned trading sessions",
+      "redistributed": false,
+      "sha256": "3ce2715f5b2745df445806b3c01da9d678709c405fd51e7e8d3c9291c7518fd6"
+    },
+    {
+      "path": "five_currents_execution_timing_20261023/contract_targets.parquet",
+      "purpose": "Historical eligible-contract targets",
+      "redistributed": false,
+      "sha256": "fe17ff9c85fca13aa08a5448f11b8e6e917de3a0dc948667c5719f486acf802a"
+    },
+    {
+      "path": "five_currents_gc4_pure_alpha_20261024/recomputed_votes.npz",
+      "purpose": "Reconstruct from licensed daily curves with settled/lagged volume and OI variants",
+      "redistributed": false,
+      "sha256": "e579e7659c962e834fc149ee6a5bb5885cfff7e52ce0d14ae3cfa68a9a32073e"
+    },
+    {
+      "path": "five_currents_frontmonth_20261025/front_clock_prices_liquidity.npz",
+      "purpose": "Build from licensed one-minute front/second-nearby bars",
+      "redistributed": false,
+      "sha256": "67edaf9b0fbbebd2a6321a1e8cde10608e536ab0d79ee827abfd37dfe7554926"
+    },
+    {
+      "path": "five_currents_frontmonth_20261025/manifest_liquidity.json",
+      "purpose": "Price-cube input identity hash",
+      "redistributed": false,
+      "sha256": "c2111ee311b266e8438459bb37984df261e80a97f986235d0abc8147f18ab73d"
+    },
+    {
+      "path": "five_currents_frontmonth_20261025/alpha_audit/individual_hindsight_winners.parquet",
+      "purpose": "Derived frozen rules; public config/frozen_intraday_rules.csv documents them",
+      "redistributed": false,
+      "sha256": "4e98256df1dbed384230e8058db725c6a9ad9a87c6b135ff88f5294a71a8bf10"
+    },
+    {
+      "path": "five_currents_frontmonth_20261025/alpha_audit/recomputed_votes.npz",
+      "purpose": "Corrected audit feature replay",
+      "redistributed": false,
+      "sha256": "3138008ab75cc7ee3f3c6baab88f8fbe0e8fb6727dbe09e6925b46db3c6b61f4"
+    }
+  ]
+}

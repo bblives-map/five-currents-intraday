@@ -1,0 +1,552 @@
+{
+  "book": "intraday",
+  "passed": 202,
+  "skipped_private_snapshot_checks": 1,
+  "failed": 0,
+  "python_syntax_verified": true,
+  "production_secret_values_found": false,
+  "raw_vendor_data_distributed": false,
+  "historical_backtests": "Archived aggregate strategy returns and original replay code; not a new market-data refit",
+  "source_adaptations": [
+    "credential and personal-path removal",
+    "optional Bloomberg acquisition adapter",
+    "explicit shared data-root configuration",
+    "shared-helper extraction without unrelated SHFE entry points",
+    "optional intraday dashboard integration",
+    "explicit private historical-fixture skips"
+  ],
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "f4e9cd5da324b1c2c19a0debd60e1516b9fcd071e0b7593761d37de58cce1214"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "8cb47c4a65bc5cfa5f960e3cbb77ca6dbeb7e0d98777e800a47eb45ca5c1296f"
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "sha256": "280ef965a038393f13555c25fdc3537af52c245638e462fec8834dbdcbc1c50c"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "46e1641b0b048b0f55d6045a0cc08879e3978bd141b8629ea0860a39f60d7a2e"
+    },
+    {
+      "path": "analyse_five_currents_execution_timing.py",
+      "sha256": "787fe20a1054e16a5f8e5149619796491cab230898a304fde6483574c31e9f8a"
+    },
+    {
+      "path": "audit_five_currents_cached_replay.py",
+      "sha256": "611dc1921c51f3ee2a17cdfd7fdbf6ba570706534a40cdddf8511e02c75bf48a"
+    },
+    {
+      "path": "audit_five_currents_deployed_intraday.py",
+      "sha256": "9419aa29264eeecda922b2b5bc36c8ccfecae052c0b9673e0f65ba8cab1519b2"
+    },
+    {
+      "path": "audit_five_currents_intraday_reconciliation.py",
+      "sha256": "55ccba3e994808b0aca541df83f2bd935198b3d71a836b83d57620e10dd1003b"
+    },
+    {
+      "path": "audit_five_currents_market_clock_tolerance.py",
+      "sha256": "10abafc1963a5957c0a6a6d718999f64dd29ba8a87eabb7e08b07532363d9061"
+    },
+    {
+      "path": "audit_five_currents_opening_price_routes.py",
+      "sha256": "409a65849d025e974691aa5c7f1c2e757ee7dbbdb9694fc26628e7115e0ef72b"
+    },
+    {
+      "path": "audit_five_currents_recent_gaps.py",
+      "sha256": "69781eb4275340f4446e4f684ec80010ed8801197017378d155bcc3baba06849"
+    },
+    {
+      "path": "build_five_currents_all_promising_report.py",
+      "sha256": "fd8242a552ad44c90ed27766eee16056e008f5b5fc529db8404d78c165ba46fd"
+    },
+    {
+      "path": "build_five_currents_frontmonth_prices.py",
+      "sha256": "8d82bf28beefd6b1193435733c516f6e5be14c5619a9e976ad5751a6c166063f"
+    },
+    {
+      "path": "build_five_currents_frontmonth_report.py",
+      "sha256": "257a679e81b8e313df6845832110e2b1e5311ace720414f748e7a6100ead858e"
+    },
+    {
+      "path": "build_five_currents_intraday_audit_report.py",
+      "sha256": "4f94427b71001ff43d71245b19541b9cd70f6bfc5a764327a3d6682bfb883c61"
+    },
+    {
+      "path": "build_five_currents_rolling_edge_report.py",
+      "sha256": "a973c92cb3eff07a6044a28817fee5886e003a56f14a07cc300e5a8ed171fcc8"
+    },
+    {
+      "path": "build_five_currents_two_books_report.py",
+      "sha256": "130a082c560b9de38b9a87a0b70bbb95384466fe871362f0d0aa27428ac57425"
+    },
+    {
+      "path": "calculate_five_currents_intraday_positions.py",
+      "sha256": "95fc7153742d6a1474c7c99f9728975e11fa05e302320ea43785dc655c3d52c4"
+    },
+    {
+      "path": "companion_lock.json",
+      "sha256": "733719bf12f55f4fa9b6a5740ce2f316cd3b2c2ab41d814cc29574a3ae7b698c"
+    },
+    {
+      "path": "compare_five_currents_opening_policies.py",
+      "sha256": "a2ecb3d0f0f65ff140417a623f9dd22411eecf4d68ff0bf0e7a37016e59f7679"
+    },
+    {
+      "path": "config/frozen_intraday_rules.csv",
+      "sha256": "0d7bf66839ac65267d2bea69b6dc8142bc2845984fe76689bc2ddf8a840a0f6d"
+    },
+    {
+      "path": "conftest.py",
+      "sha256": "b4042165fdefe912b7ea817b85fc5bf327cbc74aa9d9088f017fcd41cf22efae"
+    },
+    {
+      "path": "derive_five_currents_asset_clock_grid.py",
+      "sha256": "3606e09368ceb8381a5b6146193c19ac83f3cd830a9730604aa6021269b5ff7f"
+    },
+    {
+      "path": "diagnose_five_currents_regional_timing.py",
+      "sha256": "d6f666d4daedf21a696af64150b066a40122bf94ae9a7b9248bf7a19e174d2ac"
+    },
+    {
+      "path": "five_currents_active_contracts.py",
+      "sha256": "28d0a9e1ff509327e75c4a8a2440e19a069c02af12aae2724f149201ce111953"
+    },
+    {
+      "path": "five_currents_atr_trail.py",
+      "sha256": "8c89691c54489d5a0bd93e8710e1116c44769581caae019d7cfa64984991c2dc"
+    },
+    {
+      "path": "five_currents_close_only_features.py",
+      "sha256": "60c7bb189f48dff47758ebf5eca11880f47940c6f8fcbe6de9a76db626f33bd6"
+    },
+    {
+      "path": "five_currents_consistency_objectives.py",
+      "sha256": "1a9651b1424124b99ed066f7c2a41b88e11a735c45c82c5d2efb59a38fb203de"
+    },
+    {
+      "path": "five_currents_execution_timing.py",
+      "sha256": "1c3b7bec6b643e2e58ee86d6330e6c34a636dd828838cbdb12efd7e2605ddac8"
+    },
+    {
+      "path": "five_currents_family_timing.py",
+      "sha256": "c7bb39ab12347579b496eac55a7b0e83b4cf9ac21ced887b142e9263b27df78e"
+    },
+    {
+      "path": "five_currents_front_intraday.py",
+      "sha256": "70feca52bf86f359017a77c70c54303d2cee9f3e272febbb9b99fb02684c471d"
+    },
+    {
+      "path": "five_currents_group_clock_core.py",
+      "sha256": "2d06b93bb09b83132a3a1c073aa681539dfc20693210fb79fb9bd3f50c4b0fe5"
+    },
+    {
+      "path": "five_currents_lightweight_combination.py",
+      "sha256": "59fede851dd7e587c4cdd6dfa980522ece61bd6db2ec54895235002cc51fdf89"
+    },
+    {
+      "path": "five_currents_opening_metrics.py",
+      "sha256": "2cf00197dffd8560d5c0f25f24e21c26a772ca24dfde7b7b8773a88ee61aa060"
+    },
+    {
+      "path": "five_currents_opening_study.py",
+      "sha256": "d5ee648700fa91078aea6a93139d1054b9cded3dfcfbbc3f2bc5d749c6351694"
+    },
+    {
+      "path": "five_currents_shuffled_admission.py",
+      "sha256": "479bc6ed2062ea6d483da7ec15b6c2712e72fc4c7300fe35101c83594eb673a5"
+    },
+    {
+      "path": "five_currents_subgroup_intraday.py",
+      "sha256": "c8a770c38765dcf7f6d384fb752ce5305f128f87c9090043f6034b86d367ec71"
+    },
+    {
+      "path": "plot_five_currents_monday_gantt.py",
+      "sha256": "230c7501934087749cc5db61317eea436655bd824a38d4b892dfe70f124f0bbf"
+    },
+    {
+      "path": "prepare_five_currents_execution_timing.py",
+      "sha256": "051ce369f07ac268375f35d8741f91075391b2f8f188d171be75c0b601ad6730"
+    },
+    {
+      "path": "prepare_five_currents_public.py",
+      "sha256": "0df30aa9dd895ed5396529b0602f1cea9cf5252bf6e00a3a95dee35a42b84446"
+    },
+    {
+      "path": "prepare_five_currents_subgroup_intraday.py",
+      "sha256": "1c77c1d319c5155c6375e78541fa7e7a075d44c028b8bb80e42ce3d971f3a8ae"
+    },
+    {
+      "path": "private_input_manifest.json",
+      "sha256": "90b97032241140c16c5e8e5db3e9a2b06db0f7fb86238f1ec5e2a20fafeff35a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "77e56689a8ca6dc3f17a42f1006eea39c7c8d48dfc44c1304ebfa0a9357efe95"
+    },
+    {
+      "path": "README.md",
+      "sha256": "bda1dc65f2639d0c2b31fab1b10f22a9a48dbaebc94903fefcf1220b90a38d1f"
+    },
+    {
+      "path": "rebuild_five_currents_cached_daily_audit.py",
+      "sha256": "4ccdaa187353fb1398f158353cbbb39e4bbb7b57b31963811bf8714faeccdfff"
+    },
+    {
+      "path": "rebuild_five_currents_consistency_report.py",
+      "sha256": "6e91c28a123d50aa77acec82d80e97f4ee4b24365a6aac5a99959a0f8f2608b2"
+    },
+    {
+      "path": "reconcile_five_currents_family_timing.py",
+      "sha256": "ab8931df2d4892431ee6887d6833ee4c8ba807f82d98e41b1de8e7d9d2180689"
+    },
+    {
+      "path": "reconcile_five_currents_silver_samples.py",
+      "sha256": "7d1f3887b018525cde4da6cb28760ab245341950faeee3f0df11e2d77ee53332"
+    },
+    {
+      "path": "report_five_currents_cached_window_replay.py",
+      "sha256": "e6f4730622933749783a7cbfba3f6ee69e7a91cb506cbe39fcf916c30da16153"
+    },
+    {
+      "path": "report_five_currents_consistency.py",
+      "sha256": "1b5f9fe6e17fad559a33d3323c3265b701368f02db2ef3a0dc0d93f13d49d2d1"
+    },
+    {
+      "path": "report_five_currents_deployed_intraday_audit.py",
+      "sha256": "7a90ad0510945e5b37774c769cce7d0922ee03da9afcf7c7dacd6d1d2ec6a269"
+    },
+    {
+      "path": "report_five_currents_execution_timing.py",
+      "sha256": "56aba2532a4675a430b2d1b9ed48c46ca936b43d1599637d508b5932f087dc0b"
+    },
+    {
+      "path": "report_five_currents_family_timing.py",
+      "sha256": "c8c341c185ec3076caf39d8171967196053a205fa0fba1a8ab18278d0144f4c9"
+    },
+    {
+      "path": "report_five_currents_group_clock.py",
+      "sha256": "f59fb9fb64911d96ea3609dd762cb90889e9a7755f074125aea5cc323c517dc5"
+    },
+    {
+      "path": "report_five_currents_intraday_atr_study.py",
+      "sha256": "b690e55202701af3a1d3acf448cef60429228b32462a4624079b7c1eae5c6f50"
+    },
+    {
+      "path": "report_five_currents_uniform_active_intraday.py",
+      "sha256": "2cf039ff4c702ce1eecc3ad1cadc2c2b6831cac0f18f58c68c77e60eaa7754be"
+    },
+    {
+      "path": "reports/archived_backtest.html",
+      "sha256": "d5f86b66f5cc213529994318d4af1f33587e1bf8e239a39855cacfb61b8be544"
+    },
+    {
+      "path": "reports/assets.png",
+      "sha256": "f58578dd19a5e9061852acf365b46c94de8c9bd23a6ab888b82e7d830c858287"
+    },
+    {
+      "path": "reports/portfolio.png",
+      "sha256": "1412eeae3fad6058dac6b607a9a0b3148d5ed43a1be3cfadc9a0433109472d6f"
+    },
+    {
+      "path": "reports/recomputed_metrics.csv",
+      "sha256": "4927051d6e9282d6e132af64aa947c4c6beef91b06d2c9cbb379a86d844ce65b"
+    },
+    {
+      "path": "results/actual_fill_delays.csv",
+      "sha256": "045132c8da344fda8f3b2ea293a3797fc6a64beba3ccf96398cabd8041d4d161"
+    },
+    {
+      "path": "results/archive_metadata.json",
+      "sha256": "80b5ea6637ccc7405195b491eaf0d91074a6ae6ae7713931dc4c029c1f911e1e"
+    },
+    {
+      "path": "results/archived_reconciliation.csv",
+      "sha256": "4679c393b4ae2237467858e1069bb9d374f897d0198dc9dbeec7832a16684d7b"
+    },
+    {
+      "path": "results/coverage.csv",
+      "sha256": "bb5b59041cc6ccc1f452f1d5fd831504801565f87fb114fdc5e8a50c1cbc0f58"
+    },
+    {
+      "path": "results/performance_metrics.csv",
+      "sha256": "ff0cd5b96ab1b4a40d9191b5c6c568ac92586d1cfd977c10a8df8d2428221254"
+    },
+    {
+      "path": "results/strategy_returns.csv",
+      "sha256": "972a654b162e0d9b524287e007d7abd03602b9ff0f3960536cfe00cde7e0d7b4"
+    },
+    {
+      "path": "results/tested_versions.json",
+      "sha256": "3d9df84c1490f18f642aafc43160b3cf8a14a7c3741d9591b82877dd3c2d8bbd"
+    },
+    {
+      "path": "results/yearly_metrics.csv",
+      "sha256": "1bc35888792ff0a2e72e45caf49521caf3d1614ef1c75cb70c058492df9731d8"
+    },
+    {
+      "path": "run_five_currents_24h_reconciliation.py",
+      "sha256": "c818f44c1b914c53540ead9fa1325515a260127a78e4817fdc4a92924e632681"
+    },
+    {
+      "path": "run_five_currents_atr_walkforward.py",
+      "sha256": "9383aec9bf1b078b146e84b9a89fa79b24f3450a33cac2f46ed1146e8d36c4fe"
+    },
+    {
+      "path": "run_five_currents_cached_curve_sensitivity.py",
+      "sha256": "593ac9025607baa9b9304dcc692780002248ef6c4efa32002eec9d5dade3e6a6"
+    },
+    {
+      "path": "run_five_currents_cached_window_replay.py",
+      "sha256": "cd1e6b766b8f0e06b6dd513f48803ed1c8bffc759820092d2b4570776dd9b61a"
+    },
+    {
+      "path": "run_five_currents_consistency_study.py",
+      "sha256": "efc0e9a912e66e23b260423cad847a0e35ce9cbe965368d016df4cd0e5324a12"
+    },
+    {
+      "path": "run_five_currents_execution_timing_study.py",
+      "sha256": "f61c468cc36db9c5e13d43ceec71a7a9d19de059144ed2c82c02aa385519cbb0"
+    },
+    {
+      "path": "run_five_currents_family_timing.py",
+      "sha256": "71e425b074a66eb755345cc46b1c007609e8eb8e525f202c2975fc98a16fbbcc"
+    },
+    {
+      "path": "run_five_currents_four_market_intraday.py",
+      "sha256": "2e7be2ee2f4e6d81a92fd53f25e1c748118b35db3f1476848e8cd213273629e8"
+    },
+    {
+      "path": "run_five_currents_front_intraday.py",
+      "sha256": "7713f4711f8383680dc37657ab82437e37c903f4e45d11546b92453e9ab4c60c"
+    },
+    {
+      "path": "run_five_currents_frontmonth_alpha_audit.py",
+      "sha256": "13b009d128edbf6ada27682f90f2b1b52e91515090112872d146df8059bbc64e"
+    },
+    {
+      "path": "run_five_currents_frontmonth_studies.py",
+      "sha256": "6236490dc047f47bf2f595c994755b74bc3aa9b880259ddd7d2d3d9c7440dfe8"
+    },
+    {
+      "path": "run_five_currents_gc4_pure_alpha_audit.py",
+      "sha256": "4c06ddd5087be6ed0f41e5d760d02ef12a292130c052992cc63303f615349769"
+    },
+    {
+      "path": "run_five_currents_group_clock.py",
+      "sha256": "51e4d08a384ea7713fa8271c2f6af6737509efde4d6681a74a242a122e72137e"
+    },
+    {
+      "path": "run_five_currents_intraday_atr_study.py",
+      "sha256": "19bfc61400389a60c3d14dff4368650b786dba2540cbea1e33c6531f3ae9562c"
+    },
+    {
+      "path": "run_five_currents_intraday_cost_audit.py",
+      "sha256": "fb8fd8c66e9a5264f337b49a7ba6512c80a6f9920dea320fddf1886027e49abc"
+    },
+    {
+      "path": "run_five_currents_intraday_opposite.py",
+      "sha256": "3eaeafe40ba310430691aa5873f7af4a51b818c3fc5ce84c977d901368d3390c"
+    },
+    {
+      "path": "run_five_currents_intraday_replay.py",
+      "sha256": "67577439c2fa88afb3eba5505cb719dede8354dfd8742b298f076e82a8df0f68"
+    },
+    {
+      "path": "run_five_currents_lightweight_combination.py",
+      "sha256": "2a10ed1d59deef2114ddeb96ab9e84a1a3737ddcd41c210222f8002cccd06950"
+    },
+    {
+      "path": "run_five_currents_liquidity_mask.py",
+      "sha256": "d46c38a11d9f55fc45017b9b9a0e15916ed2be07b422214f36f8ff49202e31fb"
+    },
+    {
+      "path": "run_five_currents_london_family_blends.py",
+      "sha256": "33f3531e590840664368431da42d8d616ee5a90af9eb3faa8bf0384f8df0e156"
+    },
+    {
+      "path": "run_five_currents_market_hours.py",
+      "sha256": "4e578ad459536a7dad82f852c59016fb82eec98293719e16ec07f0171f298512"
+    },
+    {
+      "path": "run_five_currents_masked_intraday.py",
+      "sha256": "04e94f067ad1e7a9d48a59a2879f266d3a4e1ba412f04f5fb7a27733ce6cc8ef"
+    },
+    {
+      "path": "run_five_currents_regional_blocks.py",
+      "sha256": "5353bb6dae44654acdbe73ddd6c83eb44a99cdbcbc49842ee4c8cff81338e7ba"
+    },
+    {
+      "path": "run_five_currents_rolling_edge.py",
+      "sha256": "80b65fa93b891cc77c36dd2659a7f4d1358e6f6b3fb75900b6333004d1948b2d"
+    },
+    {
+      "path": "run_five_currents_shuffled_admission.py",
+      "sha256": "ab8ce45cade67f5e7336380ea7c39f2971f4d182bef3f03c7b368861e2706731"
+    },
+    {
+      "path": "run_five_currents_two_family_independent.py",
+      "sha256": "5cecabc6010ef1a9bfbcdc6bbaa6466ddb7d5eeeedc977f8e51fc689548a9c8d"
+    },
+    {
+      "path": "run_five_currents_two_family_pure.py",
+      "sha256": "b5f80f17c5567a027144e02aa38f5037cfcaf6c5d6fdc6124a25039c665ecb54"
+    },
+    {
+      "path": "run_five_currents_uniform_active_intraday.py",
+      "sha256": "2bed365c26e27376445a35806e8f929e5a30e1aeeff161731e5deb8b91a10d09"
+    },
+    {
+      "path": "setup.py",
+      "sha256": "81f72b26dc8af7baa3627014ff3c5100627a4801dd255e3e73c013d7815e8dbd"
+    },
+    {
+      "path": "source_manifest.json",
+      "sha256": "febec0c7cf891afd258b94de4141bf22f884ae990c4aa37eef3da2b3db34ffb6"
+    },
+    {
+      "path": "stress_five_currents_execution_timing.py",
+      "sha256": "e3cef16f71ffe14ae8f0500dc698a587def026c43d1932912f6879c9ef80dad7"
+    },
+    {
+      "path": "test_audit_five_currents_cached_replay.py",
+      "sha256": "65394ecd4445102ef62690dadc4c8e39f404faa419a4365d8ac1c519a06f75c5"
+    },
+    {
+      "path": "test_five_currents_active_contracts.py",
+      "sha256": "8820a67011ef149b868412c1f8b1241bb97b04afb3ff0e75b7fa6be3683c3457"
+    },
+    {
+      "path": "test_five_currents_cached_curve_sensitivity.py",
+      "sha256": "6fcd02b22a4b2e009c7dc00b522c935823e790fd427e68c695cefca3707bbb51"
+    },
+    {
+      "path": "test_five_currents_cached_window_replay.py",
+      "sha256": "e507287da4160a1aa985502a5cecc01bcd6aac95ac2bd40b6c081206a9f704c7"
+    },
+    {
+      "path": "test_five_currents_consistency_objectives.py",
+      "sha256": "66a99bc5adf0343cd72b6ad2b5363a23e055967a3bcdde6794c46fa3ff55ac76"
+    },
+    {
+      "path": "test_five_currents_execution_timing.py",
+      "sha256": "5178af422173ea5b5c6c5844d436b6ca1c27e446a6135ea81d23a152e261eb9c"
+    },
+    {
+      "path": "test_five_currents_family_timing.py",
+      "sha256": "a826151d492640e5f55fe5c720cf61f2506d5ec4703457d638bc4af3de156093"
+    },
+    {
+      "path": "test_five_currents_four_market_intraday.py",
+      "sha256": "1d1e9619a8f5e81357b32aab632977a7fcc1a4bf2e53ffea759eb8453242d312"
+    },
+    {
+      "path": "test_five_currents_front_intraday.py",
+      "sha256": "e5873b35c47227c46ac59352d38c8b252c4fc3cb5c0515c2d599b47b5002f911"
+    },
+    {
+      "path": "test_five_currents_frontmonth_prices.py",
+      "sha256": "106fbfae4a2999f47d1da8b1f7b4f718d98fd1ffd11788407e72612d9429c234"
+    },
+    {
+      "path": "test_five_currents_group_clock.py",
+      "sha256": "4ed91df8750ee7e032569284e9970a438a2f55c09df6e0ca827072e936c7049a"
+    },
+    {
+      "path": "test_five_currents_intraday_audit.py",
+      "sha256": "7c52b9deeaabea7b861b2df6a93fe4f10711ccec9c959e23b349e80f802bce97"
+    },
+    {
+      "path": "test_five_currents_intraday_exposure.py",
+      "sha256": "9ffb661378791e798cd1535d0caf6b1620b92a79fcc3c158950e0063a2a56473"
+    },
+    {
+      "path": "test_five_currents_intraday_replay.py",
+      "sha256": "e6f7673beb0205f93d4d14483881f6c7066724cd6565942f311661c8b62043a1"
+    },
+    {
+      "path": "test_five_currents_lightweight_combination.py",
+      "sha256": "6ff544e2df428c0f03d9478c405a627ca8761affbe4a2d54bcf04e7a038ea665"
+    },
+    {
+      "path": "test_five_currents_london_family_blends.py",
+      "sha256": "55a308c93c0f9dc759bd58a8074ff6a4e4cd08e094c663d120b3d102b1f70250"
+    },
+    {
+      "path": "test_five_currents_market_hours.py",
+      "sha256": "b07fa64aae2dbb38061c351262a45c88e48f73b53cd676e3826c846b59d8768c"
+    },
+    {
+      "path": "test_five_currents_opening_study.py",
+      "sha256": "130f9581d37b946e371006ad8f1f7ad294363a4056a4754157209965078a8151"
+    },
+    {
+      "path": "test_five_currents_shuffled_admission.py",
+      "sha256": "d39930488b0e197fa396f09f02ceaed6de6dcb55a4aba0e850c0d585be85ca65"
+    },
+    {
+      "path": "test_five_currents_two_family_independent.py",
+      "sha256": "d73f84a958c92e85e2756c3ff2ac3d93883873d550594e75a073b70b856cd586"
+    },
+    {
+      "path": "test_reconcile_five_currents_silver_samples.py",
+      "sha256": "dd1c69511541a3eab94a7e67536130893207b59882f94fa77a5bfab66374ccb2"
+    },
+    {
+      "path": "tools/check_inputs.py",
+      "sha256": "424f7995aa6f1f689ce78e52d0f2fff839e13e965b8a99212e05f6adb32104e9"
+    },
+    {
+      "path": "tools/check_public_release.py",
+      "sha256": "27f389898ed6e758a416c57cec2ed1f89a0d1877f498be88123145df4d301ac0"
+    },
+    {
+      "path": "tools/render_archived_report.py",
+      "sha256": "a6c29801b197f6864f08de41b5b0620d6c089fe04a3f699df95075b5548c3819"
+    },
+    {
+      "path": "validate_five_currents_intraday_atr_study.py",
+      "sha256": "35ca5ebf52beaacb3f518d802607983317ff7b7494b645cc79a655dd4a461ac5"
+    },
+    {
+      "path": "verify_five_currents_consistency_study.py",
+      "sha256": "1c161dfbbacc062ca36116659acb51691661622ae999088ba75210b768029858"
+    },
+    {
+      "path": "verify_five_currents_execution_timing.py",
+      "sha256": "8c4daabce650bfb406eec99712f7e3a3a1b34041ef4248266526bdd44a0591ae"
+    },
+    {
+      "path": "verify_five_currents_family_timing.py",
+      "sha256": "b9efa8e80d2f0d181c244e8a90db948b5747b24bab9e83832dc215b0f709438e"
+    },
+    {
+      "path": "verify_five_currents_frontmonth_results.py",
+      "sha256": "7164a753706c3cb4c20dc53b84b2626e1ab4fd3899f0c5961827366a51d42e29"
+    },
+    {
+      "path": "verify_five_currents_group_clock.py",
+      "sha256": "d852ddda840b079b89cc1024b914e166488442ab59712df600be5cea444e1996"
+    },
+    {
+      "path": "verify_five_currents_intraday_replay.py",
+      "sha256": "64cce7ff1f5adb1f58c655b3dead6747f5a83171aae47657a9d29371170b9481"
+    },
+    {
+      "path": "verify_five_currents_lightweight_combination.py",
+      "sha256": "335b0caf3661a52221f623132753a1710dc46275794f4eecab5279e8651184c5"
+    },
+    {
+      "path": "verify_five_currents_shuffled_admission.py",
+      "sha256": "9b44d88991ad74cad68c8987110228f02e7053a95920762a6eab970bb7da9e0c"
+    },
+    {
+      "path": "verify_five_currents_two_family_independent.py",
+      "sha256": "c0eb7fb27848fcd12f6a6ff7f1b1a576ccf07082922702ddae4d89c3e326a7ae"
+    }
+  ]
+}

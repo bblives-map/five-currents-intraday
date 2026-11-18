@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "five-currents-intraday"
+version = "0.1.0"
+description = "Five Currents intraday alpha origins, execution replay and robustness research"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["five-currents-interday>=0.1.0", "numba>=0.59", "threadpoolctl>=3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
+addopts = "--import-mode=importlib"

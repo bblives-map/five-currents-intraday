@@ -1,0 +1,6 @@
+{
+  "title": "Five Currents Intraday Archived Backtest",
+  "description": "Archived independent replay of the frozen ten-rule CL/NG/GC/HG intraday schedule and per-asset contributions.",
+  "limitations": "Clock, treatment, family and holding choices are descriptive hindsight winners. The ten-rule sum is an unallocated study exposure, not a validated dollar-VaR portfolio. Rolling allocation does not eliminate roster-selection bias.",
+  "source": "five_currents_intraday_direction_audit_20261027 aggregate diagnostics only"
+}

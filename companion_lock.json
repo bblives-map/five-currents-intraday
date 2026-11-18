@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/bblives-map/five-currents-interday",
+  "commit": "b82194bdbe117e3953673dd7c394d1b58c059f92",
+  "version": "0.1.0",
+  "purpose": "Exact daily feature, fitting, normalization and accounting implementation used by this intraday release"
+}

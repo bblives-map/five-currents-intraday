@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Five Currents Intraday Archived Backtest</title><style>body{font:16px Georgia,serif;color:#163c39;background:#f6f5ef;max-width:1100px;margin:48px auto;padding:0 24px;line-height:1.55}h1{font-size:36px}img{width:100%;background:white;border-radius:10px}table{width:100%;border-collapse:collapse;background:white;font:13px monospace}td,th{padding:9px;text-align:right;border-bottom:1px solid #ddd}td:first-child,th:first-child{text-align:left}.note{padding:18px;border-left:4px solid #287b71;background:white}</style>
+<h1>Five Currents Intraday Archived Backtest</h1><p>Archived independent replay of the frozen ten-rule CL/NG/GC/HG intraday schedule and per-asset contributions.</p>
+<p>Archived observations: 2024-06-20 to 2026-10-26. Figures are normalized research returns after the archived cost model, not brokerage P&amp;L.</p>
+<div class="note">Clock, treatment, family and holding choices are descriptive hindsight winners. The ten-rule sum is an unallocated study exposure, not a validated dollar-VaR portfolio. Rolling allocation does not eliminate roster-selection bias. Missing observations remain gaps; they are not filled as zero-return observations. These are existing archived results, not a new live-data backtest.</div>
+<h2>Portfolio and drawdown</h2><img src="portfolio.png" alt="Full archived portfolio equity and drawdown">
+<h2>Asset contributions</h2><img src="assets.png" alt="Archived per-asset contribution curves">
+<h2>Recomputed archive statistics</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>series</th>
+      <th>observations</th>
+      <th>net_sharpe</th>
+      <th>total_return</th>
+      <th>max_drawdown</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CL</td>
+      <td>573</td>
+      <td>1.8913</td>
+      <td>0.2953</td>
+      <td>-0.0335</td>
+    </tr>
+    <tr>
+      <td>NG</td>
+      <td>561</td>
+      <td>1.2864</td>
+      <td>0.0444</td>
+      <td>-0.0112</td>
+    </tr>
+    <tr>
+      <td>GC</td>
+      <td>557</td>
+      <td>1.6285</td>
+      <td>0.0860</td>
+      <td>-0.0159</td>
+    </tr>
+    <tr>
+      <td>HG</td>
+      <td>519</td>
+      <td>1.5458</td>
+      <td>0.0145</td>
+      <td>-0.0032</td>
+    </tr>
+    <tr>
+      <td>Portfolio</td>
+      <td>470</td>
+      <td>2.8556</td>
+      <td>0.4656</td>
+      <td>-0.0304</td>
+    </tr>
+  </tbody>
+</table>
+<p>The complete original research, report generators and sensitivity tests are in the repository. Supply the private input manifest to replay them rather than treating this chart as independent validation.</p></html>

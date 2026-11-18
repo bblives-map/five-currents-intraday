@@ -1,0 +1,20 @@
+name: Source and Synthetic Tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'five-currents-interday @ git+https://github.com/bblives-map/five-currents-interday.git@b82194bdbe117e3953673dd7c394d1b58c059f92'
+      - run: python -m pip install -e '.[test]'
+      - run: python -m compileall -q .
+      - run: python -m pytest -q
+      - run: python tools/check_public_release.py
+      - run: python tools/render_archived_report.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: archived-research-report
+          path: reports/

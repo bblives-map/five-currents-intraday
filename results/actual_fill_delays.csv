@@ -1,0 +1,7 @@
+,entry_delay,entry_delay,hold_extra,hold_extra
+,median,max,median,max
+root,,,,
+CL,1.0,4.0,1.0,2.0
+GC,1.0,10.0,1.0,11.0
+HG,1.0,11.0,1.0,11.0
+NG,1.0,8.0,1.0,11.0
